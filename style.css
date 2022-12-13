@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +21,6 @@
     position: relative;
 }
 .header-watch{
-    min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(104, 62, 81),rgb(134, 77, 77));
     background-position: center;
@@ -75,7 +75,7 @@ nav img{
 .main-text{
     text-align:center;
     position:absolute;
-    top:40%;
+    top:20%;
     width:90%;
     left:50%;
     transform:translate(-50%);
@@ -104,4 +104,64 @@ nav img{
 }
 .main-text a:hover::after{
     width:5%;
+}
+.phone{
+    color:rgb(36, 25, 95)
+}
+.videos{
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.videos h1{
+    text-align:center;
+    margin:5%;
+    font-size:40px;
+}
+.decoration{
+    min-height:2vh;
+    width:100%;
+    background:repeating-linear-gradient(to right,rgb(255, 255, 255),rgb(0,0,0));
+}
+.videos p{
+    width:100%;
+    text-align:center;
+}
+.body-about{
+    font-size:24px;
+    background:grey;
+}
+table{
+    width:100%;
+}
+td{
+    color:lavender;
+    text-align:center;
+    transition:0.5s;
+    background-color:transparent;
+    width:33%;
+}
+table,th,td{
+    border:1px solid;
+}
+th, td {
+    padding: 15px;
+}
+td:hover {
+    background-color: rgb(62, 81, 88);
+}
+td img{
+    width:90%;
+}
+.form {
+    background-color:grey;
+    text-align:center;
+    
+}
+form {
+    display: block;
+    margin-top: 0em;
 }

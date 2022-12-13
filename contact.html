@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
     <body>
         <section class="header-contact">
@@ -21,8 +22,43 @@
             </nav>
             <div class="main-text">
                 <h1>Contact Us</h1>
-                <a href="https://www.instagram.com/senioritisjazz/">Instagram</a></p>
+                <a href="https://www.instagram.com/senioritisjazz/">Instagram</a>
+                <a href="https://www.youtube.com/channel/UCT-TJ_u6XKZs_uRRwXJXpZw">Youtube</a>
+                <br>
+                <p>For gig inquiries, feel free to give us a call or text at <div class="phone">440-781-5575</div></p>
+                <p>Or fill out the form below!</p>
+                <img src="Arrow.png" width="200px" height="200px">
             </div>
+        </section>
+        <section class="decoration"></section>
+        <section class="form">
+            <br><br>
+            <form action="/action_page.php" method="get">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                
+                <label for="date">Date Needed:</label>
+                <input type="text" id="date" name="date"><br><br>
+
+                <label for="radio">Time Requested:</label><br>
+                <input type="radio" id="30" name="time" value="30">
+                <label for="30">Half Hour</label><br>
+                <input type="radio" id="60" name="time" value="60" checked="checked">
+                <label for="60">One Hour</label><br>
+                <input type="radio" id="120" name="time" value="120">
+                <label for="120">Two Hours</label><br><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone"><br><br>
+
+                <input type="submit" value="Submit" onclick="displayConfirmation()">
+            </form>
+            <br><br>
+            <p id="Confirmation"></p>
+            <br><br>
         </section>
     </body>
 </html>
